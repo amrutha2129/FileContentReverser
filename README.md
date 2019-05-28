@@ -23,3 +23,7 @@ Submit as a solution with two projects – a test project and a console applicat
 * Click on FileContentReverser.sln, which opens the solution in MS Visual Studio
 * Run the unit test cases
 * Run the solution
+* Console opens
+* Enter the file path from which you have to read the contents
+* Enter the filepath to which the reversed contents has to be written
+* Check the file for the content.
