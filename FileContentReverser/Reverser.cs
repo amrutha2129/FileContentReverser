@@ -6,20 +6,21 @@ namespace FileContentReverser
 {
     public class Reverser : IReverser
     {
-        //Function that accepts a string and returns its reversed value
+        
         public string Reverse(string text)
         {
-            //convert to array
-            char[] strArray = text.ToCharArray();
+            var lines = text.Split(Environment.NewLine);
+            var output = new StringBuilder(lines.Length);
+            Array.Reverse(lines);
+            foreach (var line in lines)
+            {
+                var characters = line.ToCharArray();
+                Array.Reverse(characters);
+                var reversedLine = new string(characters);
+                output.AppendLine(reversedLine);
+            }
 
-            //reverse the array
-            Array.Reverse(strArray);
-
-            //again convert to string
-            string reverseString = new string(strArray);
-
-            return reverseString;
-
+            return output.ToString().TrimEnd('\r','\n');
         }
     }
 }

@@ -4,9 +4,17 @@ using FileContentReverser;
 
 namespace FileContentReverserTest
 {
+    [TestFixture]
     public class Tests
     {
-        IReverser reverser = new Reverser();
+        IReverser reverser;
+
+        [SetUp]
+        public void Init()
+        {
+            reverser = new Reverser();
+        }
+
         [Test]
         public void Is_Empty_Text_Reversed()
         {
@@ -27,6 +35,19 @@ namespace FileContentReverserTest
             Assert.AreEqual(".aeroK htuoS dna aisyalaM ,hsedalgnaB ,aidnI fo lamina lanoitan.snamuh htiw stcilfnoc tnacifingis desuac sah ,htraE no secalp detalupop ylesned erom eht fo emos", reversedText);
         }
 
-
+        [Test]
+        public void Is_Multi_Line_Reversed()
+        {
+            string input = String.Join(Environment.NewLine,
+                "abc",
+                "def",
+                "ghi");
+            string expected = String.Join(Environment.NewLine,
+                "ihg",
+                "fed",
+                "cba");
+            string reversedText = reverser.Reverse(input);
+            Assert.AreEqual(expected, reversedText);
+        }
     }
 }
