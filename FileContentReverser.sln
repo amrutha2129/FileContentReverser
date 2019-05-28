@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileContentReverser", "FileContentReverser\FileContentReverser.csproj", "{0013C662-BF2C-4654-AB0A-A18538C6D189}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileContentReverserTest", "FileContentReverserTest\FileContentReverserTest.csproj", "{3E779767-20A6-4FBA-8AD7-C1E57482A20B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0013C662-BF2C-4654-AB0A-A18538C6D189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0013C662-BF2C-4654-AB0A-A18538C6D189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0013C662-BF2C-4654-AB0A-A18538C6D189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E779767-20A6-4FBA-8AD7-C1E57482A20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E779767-20A6-4FBA-8AD7-C1E57482A20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E779767-20A6-4FBA-8AD7-C1E57482A20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E779767-20A6-4FBA-8AD7-C1E57482A20B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
