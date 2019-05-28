@@ -21,4 +21,5 @@ Submit as a solution with two projects – a test project and a console applicat
 
 * Unzip the zipped folder FileContentReverser.zip
 * Click on FileContentReverser.sln, which opens the solution in MS Visual Studio
+* Run the unit test cases
 * Run the solution
